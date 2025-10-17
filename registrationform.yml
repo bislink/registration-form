@@ -21,10 +21,10 @@ secrets:
   - VeynConcogJeadcitghooppyoicfeesdomdeethIshOkChayctAchheecengIpdouHiobufikWaulrulotHelCuehienipVusledyifVufocIr#froccosib
   - NemIgyindOpCykEcCuhuecudidKicHimErcimnodvubjiUjOtotgockoybKesIvTefWuckewgyeupNeonAntEl5okGijwyorgoojFooggyiademyipbyrud6
 dev: 1
-version: '078'
+version: '034'
 thisapp:
-  name: "registrationform"
-  description: "registrationform"
+  name: "Registration Form Creator/Manager"
+  description: "Registration Form Creator/Manager"
   dir:
     main: "<%= app->home %>"
     logs: "<%= app->home->sibling('logs') %>"
