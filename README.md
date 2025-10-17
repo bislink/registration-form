@@ -1,4 +1,43 @@
+# Registration Form
+
+## Project
+
+### Name
+Registration Form
+
+### Start
 Fri Oct 17 09:18:57 CDT 2025
+
+### End
+Future Date
+
+## Description
+
+A Registration Form 
+
+## Installation 
+
+### Do the following to see it on your own PC :-: 
+
+#### Log into a shell (command line utility/app) in ns23 or ns36
+
+#### RUN 
+'mkdir k/kishore/business -p'
+
+#### RUN 
+'cd k/kishore/business'
+
+#### RUN 
+'git clone https://git.biz-land.in/root/registration-form'
+
+#### RUN 
+'./h'
+
+#### OPEN 
+'http://localhost:10036/_form' 
+
+in a browser to see it
+
 #### 2025-10-17 09:18:59 CDT
 
 	Commit ID: Old 000 | New 001
@@ -87,5 +126,11 @@ Fri Oct 17 09:18:57 CDT 2025
 
 	Commit ID: Old 014 | New 015
 	Version ID: Old 0.1.4 | New 0.1.5
+
+
+#### 2025-10-17 11:33:58 CDT
+
+	Commit ID: Old 015 | New 016
+	Version ID: Old 0.1.5 | New 0.1.6
 
 
