@@ -42,9 +42,14 @@ sub _form ($c) {
     my $PUB = 'public/assets';
     my $FILE_NAME = 'form-elements.txt';
     my $FILE =  "$HOME/$PUB/$FILE_NAME";
-    my $FH = '';
+    my $FH;
     if ( -f "$FILE") {
-        $out .= "$FILE_NAME is accessible";
+        $out .= "<h3>$FILE_NAME is accessible</h3>";
+        if ( open ($FH, "<", "$FILE") ) {
+            while (my $LINE = <$FH>) {
+                $out .= qq{$LINE <br>};
+            }
+        }
     } else {
         $out .= qq{ Unable to open '$FILE_NAME'};
     }
