@@ -2,9 +2,22 @@ package registrationform::Database;
 
 # ABSTRACT: Database, Create Mojo App
 
+=head1 Database
+
+    for registrationform
+
+=head2 Is This File User Editable?
+
+    NO
+
+=cut
+
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 
-=head2 Get USER from pwd
+=head2 Get USER 
+
+    from pwd
+
 =cut
 
 sub get_user_from_pwd {
@@ -30,16 +43,17 @@ sub get_user_from_pwd {
 
 sub db_config ($c) {
 
+=head2 Get User
+
+    Not needed after moving db credentials 
+
+=cut
+
     my $user = get_user_from_pwd;
 
-=head2 Get DB URL
+=head2 Get DB  
     
-    Only for/on HP Envy Laptop 17-ch0xxx
-
-    MySQL 8.0.40 ()
-
-    The file, get_database_url.pl, in /m/mojoapp is the stable provider 
-        for all apps on this device only. 
+    Removed hardcoded DB credentials from this file to .yml
 
 =cut
 
