@@ -1,4 +1,4 @@
-# Registration Form
+# Registration Form Creator
 
 A registration form to collect business/user data
 
@@ -7,20 +7,21 @@ Requires Perl and Mojolicious installed on your Linux or WSL System
 ## Project
 
 ### Name
-A Registration Form
+A Registration Form Creator
 
 ### URLs
 
 #### Git Lab ```https://git.biz-land.in/root/registration-form```
 
-### Start
+#### GitLab.com ```https://gitlab.com/bizimpsol/registration-form.git
+
+### Start Date
 Fri Oct 17 09:18:57 CDT 2025
 
-### End
-
-#### Installation instructions sent to customer 
+### End Date
 
 Fri Oct 17 11:20:43 CDT 2025
+Fri Oct 17 14:23:58 CDT 2025
 
 ## Description
 
@@ -272,5 +273,11 @@ sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Ro
 
 	Commit ID: Old 026 | New 027
 	Version ID: Old 0.2.6 | New 0.2.7
+
+
+#### 2025-10-17 14:32:35 CDT
+
+	Commit ID: Old 027 | New 028
+	Version ID: Old 0.2.7 | New 0.2.8
 
 
