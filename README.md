@@ -6,16 +6,46 @@ Requires Perl and Mojolicious installed on your Linux or WSL System
 
 ## Install Perl / Mojolicious
 
-See ```https://gitlab.com/bislink/pc-access-free``` 
+### Windows / IIS
+
+See README in 
+```https://gitlab.com/bislink/pc-access-free``` 
 for instructions on how to install/enable Perl/Mojolicious for IIS
+
+### Linux 
+
+On a command like or shell, 
+
+#### Ubuntu / WSL 
+
+RUN
+
+```
+sudo apt -y update && sudo apt -y upgrade;
+sudo apt -y install perl
+sudo cpan CPAN DateTime App::cpanminus
+sudo cpanm Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Role::Tiny Future::AsyncAwait Mojolicious
+```
+
+#### Rocky Linux
+
+RUN
+
+```
+sudo dnf -y update
+sudo dnf -y install perl
+sudo cpan CPAN DateTime App::cpanminus
+sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Role::Tiny Future::AsyncAwait Mojolicious
+```
 
 ## Project
 
 ### Name
 A Registration Form
 
-### URL
-https://git.biz-land.in/root/registration-form
+### URLs
+
+#### Git Lab ```https://git.biz-land.in/root/registration-form```
 
 ### Start
 Fri Oct 17 09:18:57 CDT 2025
@@ -220,5 +250,11 @@ in a browser to see it
 
 	Commit ID: Old 024 | New 025
 	Version ID: Old 0.2.4 | New 0.2.5
+
+
+#### 2025-10-17 13:56:02 CDT
+
+	Commit ID: Old 025 | New 026
+	Version ID: Old 0.2.5 | New 0.2.6
 
 
