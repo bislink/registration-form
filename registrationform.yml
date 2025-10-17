@@ -1,0 +1,39 @@
+---
+secrets:
+  - sYilYLcZMRpk5aij1uEgNpBOjUaDwshCXoU8UHNrNo8EJ6fwm7NIICWrgcicH4fGpyXjwtSa2xmR_ECO_dBxYfDhhOhnlHHruhyso9Nw2Vs6p4LDB3SfPMjnaefP8_07dBER-TkGAfdbw1RARQES57T48FCiXByousR2bNwOnb8
+  - LyobNudidEcNaphefwoicyanhyFrelUlvIdortyuggAditcyegweapEyggelmyomlucvemKikyekCerjInEsgetcoijFajFosEgivSolGhonnOvPaynekcej
+  - HuvbokHejyeeryidAngAysIamthubUnlyrenvanOdbjocHitnicjondUdOgJodniHypacsajotUpJowpEcsenlawsatAgethbogAkRierwadIpWeytecExeg
+  - cainaitArobVutneecLeMigegtogAkHidEemDakgewloftatyegOyRedfidatcogtutjownyutnoDryhoocNiddosIvDimKajeckUllUsgevDyctEesOucyi
+  - masoworawforfAvlypacpefGavIcUjVewmaudcongaivVojCaxLaphNairlAsFovkeekDejFejAcKukimdudImApidniozGijnachyuvBisshadJisBujKec
+  - jahuejBomloastOcfunReNeimmErryeibfeteevDelbUzPodnaulvIvNejnuvAjauHoHayGrotKitoxDinirshIrlIjsafDyifiapAshVucafaylpAjMupsb
+  - pogByhyneajrawCogrofburabDearhyimyunEngansodfumGekogcanRagDabvoimukiawmopFabdivEkTugdolOnBysvisyepciKneebIbJiutyincegdio
+  - swioshdiogJefadFobShyshowsochTaGriUmyelfedbudbakupejbOlthyawyujRowmAutEpwithnemwuvNobwefbuchfujrucGeshghequafCudfeshivAr
+  - wejFiknefnafiabCewsyeahigtayhounebfamwerbakCethusubVomLesacKurfOgigNewvyosbovBod2morpathNogCurvivDiljUrAbFohecthyfsidQui
+  - HicsOlsyorigVeptAtByororHyatCygakHeryinseur!footucHeotyiacaydWokFanhobfavVartawciammudNowtItIfimonbydUppbfiecOlecemCowin
+  - omFennyegsOisgobPoydAjzibcetshomCalbawboifDaifNiUptActOobjigVawyapIdbifvonEvNalsUroognekJeOfEagCashphiazhemBotcasJargEwk
+  - tovHamFiacjipvagEwckafnijOwvAtcerbalewWiokTyawEkyarearorkAccevWovdoquiegavocopjonAwdomyoinnurAkcaigBymvafmubyResiavanodd
+  - pedWityonigPeavalsUtVomdeicIapkinvamdyavJeomvepjucDatcockasOvIdJamceeloagAddopHachKabGatAmyepCigAsShodcakphowPhanyecsOoc
+  - CluhyugsyetoamemUgUrsEephAydOajijbeapAgmywutCafDosAvyeefrobwilbOfbesgivgaHopNixQuomvuewHuAked5DrenyeidwoonpimIgeajTagsOa
+  - yovEumindubpowtevinmejryusafeymetoattevThojShaShleinquiWoyhephOvLivBevJenBeHefyidEyFlysodigPibGilasJinMavabureenorWowCoj
+  - cectedeykWov3drekEwfeurshEdwyPhasawkyocdanBachjafwoHotIjmittibewHicPossyayRaymmitrunEcTivIathmapUskowHobMecyeidryetIckul
+  - OmainBevJelfIgshyengAshbybyigAwkEgyeijNolComghalUkCunwifyuAnocDaHibKipvucNebakEbJigesShacJodjetIgEumsIbtafepecovCefekEcb
+  - yigwimakMothwImebyigcefAbecUfnoQuiWonfiHavwiafchynutOibrangetatkeigrawCoirhimDeidteivsarbAvVeDredoanWopOwtolbtwojHybChar
+  - VeynConcogJeadcitghooppyoicfeesdomdeethIshOkChayctAchheecengIpdouHiobufikWaulrulotHelCuehienipVusledyifVufocIr#froccosib
+  - NemIgyindOpCykEcCuhuecudidKicHimErcimnodvubjiUjOtotgockoybKesIvTefWuckewgyeupNeonAntEl5okGijwyorgoojFooggyiademyipbyrud6
+dev: 1
+version: '078'
+thisapp:
+  name: "registrationform"
+  description: "registrationform"
+  dir:
+    main: "<%= app->home %>"
+    logs: "<%= app->home->sibling('logs') %>"
+    data: "<%= app->home->sibling('data')->to_abs %>"
+    note: "for some reason, conf-thisapp-dir-data was missing main dir. Was giving: /home/USER/m/ /data"
+  files:
+    allowed: ".html|.css|.cgi|.html|.yml|.yaml|.txt|.htm|.asp|.php|.conf|.md|.ep|.t|.js|.gitignore|.ftpconfig|.xml|.pl|.cgi|.md|.php"
+hypnotoad:
+  listen:
+    - "http://*:3"
+  workers: 10
+redirect_in_seconds: '1'
