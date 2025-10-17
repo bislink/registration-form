@@ -1,16 +1,18 @@
 # Registration Form
 
+A registration from to collect business/user data
+
 Requires Perl and Mojolicious installed on your Linux or WSL System
 
-## Perl / Mojolicious
+## Install Perl / Mojolicious
 
-See https://gitlab.com/bislink/pc-access-free for instructions on how to install/enable 
-Perl/Mojolicious for IIS
+See ```https://gitlab.com/bislink/pc-access-free``` 
+for instructions on how to install/enable Perl/Mojolicious for IIS
 
 ## Project
 
 ### Name
-Registration Form
+A Registration Form
 
 ### URL
 https://git.biz-land.in/root/registration-form
@@ -35,7 +37,9 @@ A Registration Form
 #### Log into a shell (command line utility/app) in ns23 or ns36
 
 #### RUN 
-'mkdir k/kishore/business -p'
+```
+mkdir k/kishore/business -p
+```
 
 #### RUN 
 ```
@@ -58,7 +62,9 @@ cd registration-form
 ```
 
 #### OPEN 
-'http://localhost:10036/_form' 
+```
+http://localhost:10036/_form
+```
 
 in a browser to see it
 
@@ -208,5 +214,11 @@ in a browser to see it
 
 	Commit ID: Old 023 | New 024
 	Version ID: Old 0.2.3 | New 0.2.4
+
+
+#### 2025-10-17 13:46:23 CDT
+
+	Commit ID: Old 024 | New 025
+	Version ID: Old 0.2.4 | New 0.2.5
 
 
