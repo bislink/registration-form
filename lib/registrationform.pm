@@ -63,6 +63,8 @@ sub startup ($self) {
   $logged_in->get('/shorturl/_add')->to('shorturl#_add');
 
   $logged_in->post('/shorturl/_added')->to('shorturl#_added');
+
+  $r->get('/_form')->to('Home#_form');
   
 }
 

@@ -35,6 +35,11 @@ sub _powered_by ($c) {
   $c->render();
 }
 
+sub _form ($c) {
+    my $out = 'oo';
+    $c->render( out => $out );
+}
+
 
 
 
