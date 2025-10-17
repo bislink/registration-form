@@ -1,6 +1,6 @@
 {
   "background_color": "black",
-  "description": "CreateMojoApp",
+  "description": "Registration-Form",
   "display": "standalone",
 	"theme_color": "black",
   "icons": [
@@ -16,8 +16,8 @@
       "type": "image/png"
     }
   ],
-  "name": "CreateMojoApp",
-  "short_name": "CreateMojoApp",
-  "start_url": "/index.html?pwa=CreateMojoApp",
+  "name": "Registration-Form",
+  "short_name": "Registration-Form",
+  "start_url": "/?pwa=Registration-Form",
   "scope": "/"
 }

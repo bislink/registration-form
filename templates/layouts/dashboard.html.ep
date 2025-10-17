@@ -13,10 +13,10 @@
 	<meta name="keywords" content="<%= app->config->{thisapp}->{keywords} %>">
 	<meta name="description" content="<%= app->config->{thisapp}->{description} %>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="<%= url_for '/assets/node_modules/bootstrap/dist/css/bootstrap.min.css' %>" crossorigin="anonymous">
+	<link rel="stylesheet" href="<%= url_for '/assets/node_modules/bootstrap/dist/css/bootstrap.min.css' %>">
 	<!-- public/index.css -->
 	<link rel="stylesheet" href="<%= url_for '/assets/index.css' %>">
-  <link rel="manifest" href="<%= url_for '/manifest.json' %>">
+  <link rel="manifest" href="<%= url_for '/assets/manifest.json' %>">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -77,11 +77,11 @@
 
 </footer>
 
-<script src="<%= url_for '/assets/node_modules/jquery/dist/jquery.min.js' %>" crossorigin="anonymous"></script>
-<script src="<%= url_for '/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %>" crossorigin="anonymous"></script>
+<script src="<%= url_for '/assets/node_modules/jquery/dist/jquery.min.js' %>"></script>
+<script src="<%= url_for '/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js' %>"></script>
 
 <!-- public/index.js -->
-<script src="<%= url_for '/index.js' %>"></script>
+<script src="<%= url_for '/assets/index.js' %>"></script>
 
 <script>
 
@@ -103,9 +103,9 @@
     // register service worker
     if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-    navigator.serviceWorker.register("<%= url_for '/service-worker.js' %>")
+    navigator.serviceWorker.register("<%= url_for '/assets/service-worker.js' %>")
     .then((reg) => {
-    console.log('Service worker, PCAccessFree, registered.', reg);
+    console.log('Registration Form registered.', reg);
     });
     });
     }
