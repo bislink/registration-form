@@ -3,7 +3,10 @@
 use strict;
 use warnings;
 
-my $next_commit_id = `./get_commit_id.pl`;
+my $pwd = `pwd`;
+chomp $pwd;
+
+my $next_commit_id = `$pwd/pl/get_commit_id.pl`;
 chomp $next_commit_id;
 
 #
