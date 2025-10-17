@@ -31,7 +31,28 @@ RUN
 
 ```git pull```
 
+#### The output will be somewhat similar to 
 
+```
+[rl@ns36 registration-form]$ git pull
+warning: redirecting to https://git.biz-land.in/root/registration-form.git/
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 20 (delta 13), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (20/20), 2.10 KiB | 269.00 KiB/s, done.
+From https://git.biz-land.in/root/registration-form
+   d502a50..eb77b97  main       -> origin/main
+Updating d502a50..eb77b97
+Fast-forward
+ CHANGELOG                | 15 +++++++++++++++
+ DEVELOPER.md             | 18 ++++++++++++++++++
+ README.md                | 43 ++++++++++++++++++++++++++++++++++++-------
+ r                        | 12 ++++++++++++
+ registrationform.version |  2 +-
+ 5 files changed, 82 insertions(+), 8 deletions(-)
+[rl@ns36 registration-form]$
+```
 
 ## Description
 
@@ -301,5 +322,11 @@ sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Ro
 
 	Commit ID: Old 029 | New 030
 	Version ID: Old 0.2.9 | New 0.3.0
+
+
+#### 2025-10-17 14:46:39 CDT
+
+	Commit ID: Old 030 | New 031
+	Version ID: Old 0.3.0 | New 0.3.1
 
 
