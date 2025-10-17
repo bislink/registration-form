@@ -29,6 +29,7 @@ thisapp:
     main: "<%= app->home %>"
     logs: "<%= app->home->sibling('logs') %>"
     data: "<%= app->home->sibling('data')->to_abs %>"
+    public: "<%= app->home->sibling('public')->to_abs %>"
     note: "for some reason, conf-thisapp-dir-data was missing main dir. Was giving: /home/USER/m/ /data"
   files:
     allowed: ".html|.css|.cgi|.html|.yml|.yaml|.txt|.htm|.asp|.php|.conf|.md|.ep|.t|.js|.gitignore|.ftpconfig|.xml|.pl|.cgi|.md|.php"

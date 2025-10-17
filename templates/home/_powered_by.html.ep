@@ -21,3 +21,8 @@
     </div>
   </div>
 </article>
+
+<article class="container">
+  <h2>Home Dir</h2>
+  <%= $out %>
+</article>

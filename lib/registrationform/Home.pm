@@ -32,11 +32,22 @@ sub logout ($self) {
 
 
 sub _powered_by ($c) {
-  $c->render();
+    my $HOME = $c->conf->{thisapp}->{dir}->{main};
+  $c->render( out => " ");
 }
 
 sub _form ($c) {
-    my $out = 'oo';
+    my $out = ' ';
+    my $HOME = $c->conf->{thisapp}->{dir}->{main};
+    my $PUB = 'public/assets';
+    my $FILE =  "$HOME/$PUB/form-elements.txt";
+    my $FH = '';
+    if ( -f "$FILE") {
+        $out .= "$FILE";
+    } else {
+        $out .= qq{ Unable to open $FILE};
+    }
+    close $FH;
     $c->render( out => $out );
 }
 
