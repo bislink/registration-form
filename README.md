@@ -11,9 +11,11 @@ A Registration Form Creator
 
 ### URLs
 
-#### Git Lab ```https://git.biz-land.in/root/registration-form```
+#### Our own Git Lab Instance 
+```https://git.biz-land.in/root/registration-form```
 
-#### GitLab.com ```https://gitlab.com/bizimpsol/registration-form.git
+#### Official GitLab.com 
+```https://gitlab.com/bizimpsol/registration-form.git```
 
 ### Start Date
 Fri Oct 17 09:18:57 CDT 2025
@@ -22,6 +24,14 @@ Fri Oct 17 09:18:57 CDT 2025
 
 Fri Oct 17 11:20:43 CDT 2025
 Fri Oct 17 14:23:58 CDT 2025
+
+### Update App/Code/Template
+
+RUN
+
+```git pull```
+
+
 
 ## Description
 
@@ -279,5 +289,11 @@ sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Ro
 
 	Commit ID: Old 027 | New 028
 	Version ID: Old 0.2.7 | New 0.2.8
+
+
+#### 2025-10-17 14:38:19 CDT
+
+	Commit ID: Old 028 | New 029
+	Version ID: Old 0.2.8 | New 0.2.9
 
 
