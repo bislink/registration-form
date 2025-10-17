@@ -6,22 +6,22 @@ DATE=$(date '+%Y%m%d%H%M%S%Z');
 DATE02=$(date '+%Y-%m-%d %H:%M:%S %Z');
 
 # NNN+1
-NEXT_COMMIT_ID=`./get_commit_id.pl`;
+NEXT_COMMIT_ID=`../pl/get_commit_id.pl`;
 
 # get Next version
-NEXT_VERSION=`./get_next_version_number.pl`;
+NEXT_VERSION=`../pl/get_next_version_number.pl`;
 
 # NNN
-CURRENT_COMMIT_ID=`./get_current_commit_id.pl`;
+CURRENT_COMMIT_ID=`../pl/get_current_commit_id.pl`;
 
 # get NNN to N.N.N
-CURRENT_VERSION=`./get_current_version_number.pl`;
+CURRENT_VERSION=`../pl/get_current_version_number.pl`;
 
 COMMIT_MESSAGE=;
 
-YAMLNAME=`./get_val_from_name.pl YAML_NAME`;
+YAMLNAME=`../pl/get_val_from_name.pl YAML_NAME`;
 
-APP_NAME=`./get_val_from_name.pl APP_NAME`;
+APP_NAME=`../pl/get_val_from_name.pl APP_NAME`;
 
 VERSION_FILE="./$APP_NAME.version";
 #

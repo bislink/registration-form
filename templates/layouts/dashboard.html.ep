@@ -22,7 +22,7 @@
 <body class="d-flex flex-column h-100">
 
 % if ( stash 'h1' ) {
-	<h1 class="inv"><%= stash 'h1' %></h1>
+	<h1><%= stash 'h1' %></h1>
 % }
 
 % if ( session 'user' ) {
@@ -31,16 +31,14 @@
 	%= include 'nav-notloggedin';
 % }
 
-<br/>
-<br/>
-<br/>
+<br>
 <br>
 
 <main class="container">
 
     <%== content %>
 
-    <div id="pcaccess-assistant"></div>
+    <div id="ads"></div>
 
 </main>
 
