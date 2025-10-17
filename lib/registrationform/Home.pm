@@ -49,11 +49,12 @@ sub _form ($c) {
             while (my $LINE = <$FH>) {
                 $out .= qq{$LINE <br>};
             }
+            close $FH;
         }
     } else {
         $out .= qq{ Unable to open '$FILE_NAME'};
     }
-    close $FH;
+    
     $c->render( out => $out );
 }
 
