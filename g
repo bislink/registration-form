@@ -202,7 +202,7 @@ echo "";
 
 if [ -f "$VERSION_FILE" ]
 then
-    echo "Latest version number from the actual 'app.version' file ";
+    echo "Latest version number from the actual 'app.version' file: '$VERSION_FILE'";
     cat $VERSION_FILE;
     echo "";
 else
