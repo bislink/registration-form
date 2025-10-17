@@ -1,8 +1,78 @@
 # Registration Form
 
-A registration from to collect business/user data
+A registration form to collect business/user data
 
 Requires Perl and Mojolicious installed on your Linux or WSL System
+
+## Project
+
+### Name
+A Registration Form
+
+### URLs
+
+#### Git Lab ```https://git.biz-land.in/root/registration-form```
+
+### Start
+Fri Oct 17 09:18:57 CDT 2025
+
+### End
+
+#### Installation instructions sent to customer 
+
+Fri Oct 17 11:20:43 CDT 2025
+
+## Description
+
+Create a registration form from items stored one per line in a text file
+
+```APP_HOME_DIR/public/assets/form-elements.txt```
+
+and modify it as many times as needed.
+
+After modifying the `form-elements.txt` file, update the app by running `./h`, 
+and refresh the app/web page to see latest changes
+
+## Installation 
+
+### Do the following to see it on your own PC :-: 
+
+#### Log into a shell 
+
+(command line utility/app) in a Unix/Linux/WSL system
+
+#### RUN 
+```
+mkdir k/kishore/business -p
+```
+
+#### RUN 
+```
+cd k/kishore/business
+```
+
+#### RUN 
+```
+git clone https://git.biz-land.in/root/registration-form
+```
+
+#### RUN 
+```
+cd registration-form
+```
+
+#### RUN 
+``` 
+./h
+```
+
+#### OPEN 
+```
+http://localhost:10036/_form
+```
+
+in a browser to see it
+
 
 ## Install Perl / Mojolicious
 
@@ -37,66 +107,6 @@ sudo dnf -y install perl
 sudo cpan CPAN DateTime App::cpanminus
 sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Role::Tiny Future::AsyncAwait Mojolicious
 ```
-
-## Project
-
-### Name
-A Registration Form
-
-### URLs
-
-#### Git Lab ```https://git.biz-land.in/root/registration-form```
-
-### Start
-Fri Oct 17 09:18:57 CDT 2025
-
-### End
-
-#### Installation instructions sent to customer 
-
-Fri Oct 17 11:20:43 CDT 2025
-
-## Description
-
-A Registration Form 
-
-## Installation 
-
-### Do the following to see it on your own PC :-: 
-
-#### Log into a shell (command line utility/app) in ns23 or ns36
-
-#### RUN 
-```
-mkdir k/kishore/business -p
-```
-
-#### RUN 
-```
-cd k/kishore/business
-```
-
-#### RUN 
-```
-git clone https://git.biz-land.in/root/registration-form
-```
-
-#### RUN 
-```
-cd registration-form
-```
-
-#### RUN 
-``` 
-./h
-```
-
-#### OPEN 
-```
-http://localhost:10036/_form
-```
-
-in a browser to see it
 
 ## Commits and Updates
 
@@ -256,5 +266,11 @@ in a browser to see it
 
 	Commit ID: Old 025 | New 026
 	Version ID: Old 0.2.5 | New 0.2.6
+
+
+#### 2025-10-17 14:12:31 CDT
+
+	Commit ID: Old 026 | New 027
+	Version ID: Old 0.2.6 | New 0.2.7
 
 
