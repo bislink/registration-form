@@ -4,11 +4,14 @@
 <article class="container">
     <h2>Registration Form</h2>
 
-    <form id="registrationform" name="registrationform" action="<%= url_for '/register-company' %>" method="post">
+    <form id="registrationform" name="registrationform" 
+        action="<%= url_for '/register-company' %>" method="post"
+    >
 
         <%== $out %>
 
         <button type="submit" class="btn btn-primary">Submit</button>
+
     </form>
 
 </article>
