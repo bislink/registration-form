@@ -40,12 +40,13 @@ sub _form ($c) {
     my $out = ' ';
     my $HOME = $c->conf->{thisapp}->{dir}->{main};
     my $PUB = 'public/assets';
-    my $FILE =  "$HOME/$PUB/form-elements.txt";
+    my $FILE_NAME = 'form-elements.txt';
+    my $FILE =  "$HOME/$PUB/$FILE_NAME";
     my $FH = '';
     if ( -f "$FILE") {
-        $out .= "$FILE";
+        $out .= "$FILE_NAME is accessible";
     } else {
-        $out .= qq{ Unable to open $FILE};
+        $out .= qq{ Unable to open '$FILE_NAME'};
     }
     close $FH;
     $c->render( out => $out );
