@@ -1,0 +1,23 @@
+% layout 'default';
+% title 'Powered By';
+
+<br>
+<br>
+
+<article class="container-flex">
+  <h2>Powered By</h2>
+  <div class="row">
+    <div class="col">
+      Apache/Nginx Perl/Mojolicious
+    </div>
+    <div class="col">
+      BizLand.uk BizLand.in,
+    </div>
+    <div class="col">
+      BizLand.asia Biz-Land.us
+    </div>
+    <div class="col">
+      Biz-Land.com BiZZland.com
+    </div>
+  </div>
+</article>

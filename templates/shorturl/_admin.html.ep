@@ -1,0 +1,34 @@
+% layout 'dashboard';
+% title 'Short URL Admin';
+
+
+<article class="container">
+
+<h2>Your Redirects</h2>
+
+% if (stash 'files' ) {
+    <table class="table table-striped table-hover table-hover table-compact table-responsive table-bordered">
+        <tr> <th colspan="3">Base Domain/URL for Short URLs: &nbsp; &nbsp; http://localhost:10103 &nbsp; &nbsp; <a href="<%= url_for '/admin/shorturl/_add' %>" title="add new">Add New</a> </th> </tr> 
+        <tr> <th>View Short URL (New Win/Tab)</td> <th>Edit Short URL</th> <th>Redirect URL</th> </tr> 
+        <%== stash 'files' %>
+    </table>
+% }
+
+% if (stash 'error' ) {
+    <%== stash 'error' %>
+% }
+
+</article>
+
+% if ( config 'dev' ) {
+
+    <article class="container"><h4>Dev</h3>
+
+    % if (stash 'dir' ) {
+        <%== stash 'dir' %>
+    % }
+
+    </article>
+
+% }
+

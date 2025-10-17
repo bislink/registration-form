@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+			<!--button class="toggle-button btn btn-danger" aria-label="Slide Menu">&#9776;</button-->
+			<a
+        class="navbar-brand" href="<%= url_for '/' %>"
+        title="<%= app->config->{thisapp}->{name} %>">
+         <%= app->config->{thisapp}->{name} %>
+      </a>
+			<button
+        class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+			   <span class="navbar-toggler-icon"> </span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+
+
+            <li class="nav-item">
+            <a class="nav-link"
+              href="/login"
+              title="Login">Login
+            </a>
+            </li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<%= url_for '/_powered_by' %>" title="Powered By Perl, Mojolicious, BizLand.uk, BizLand.in, BizLand.asia, and Biz-Land.com">Powered By</a></li>
+            <li><a class="dropdown-item" href="#">-</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" title="IP">-</a></li>
+            <li><a class="dropdown-item" href="#" title="URL">-</a></li>
+            <li><a class="dropdown-item" href="#" title="Browser">-</a></li>
+            <li><a class="dropdown-item" href="#" title="Logs">-</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="/register_user"
+              title="Register for a new account"
+              >
+              Register
+            </a>
+          </li>
+					<li class="nav-item"><a class="nav-link" href="#about" data-bs-toggle="modal" data-bs-target="#about" title="About">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contact" title="contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>

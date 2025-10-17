@@ -1,0 +1,22 @@
+% layout 'dashboard';
+% title 'Short URL Admin - Add';
+
+
+<article class="container">
+
+    <h2>Add New Redirect</h2>
+
+    <form action="<%= url_for '/admin/shorturl/_added' %>" method="post">
+        <div class="mb-3">
+            <label for="short" class="form-label">Short</label>
+            <input class="form-control" type="text" name="short" placeholder="short text">
+        <div>
+        <div class="mb-3">
+            <label for="url" class="form-label">Short</label>
+            <input class="form-control" type="text" name="url" placeholder="URL including http:// or https://">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</article>
+

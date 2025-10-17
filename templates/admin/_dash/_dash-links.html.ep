@@ -1,0 +1,7 @@
+<a class="nav-link" href="<%= url_for '/admin/dir' %>" title="Directory Browser">Directory</a>
+<a class="nav-link" href="<%= url_for '/admin/file' %>?name=<%= app->home->child('public') %>/index.html" title="File">File</a>
+<a class="nav-link" href="<%= url_for '/admin/shorturl' %>" title="ShortURL Admin">Short URL</a>
+<a class="nav-link" href="<%= url_for '/admin/dir' %>" title=""></a>
+<a class="nav-link" href="<%= url_for '/admin/dir' %>" title=""></a>
+<a class="nav-link" href="<%= url_for '/admin/dir' %>" title=""></a>
+<a class="nav-link" href="<%= url_for '/admin/dir' %>" title=""></a>

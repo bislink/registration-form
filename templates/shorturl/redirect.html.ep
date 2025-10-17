@@ -1,0 +1,39 @@
+% if ( stash 'url' ) {
+
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="refresh" content="<%= app->config->{redirect_in_seconds} %>; url=<%= stash 'url' %>">
+  </head>
+  <body>
+
+    <h1>Redirecting to <%= stash 'url' %> </h1>
+
+    % if ( stash 'error' ) {
+      %= stash 'error';
+    % }
+    
+  </body>
+  </html>
+
+% } else {
+
+  <!doctype html>
+  <html lang="en">
+  <head>
+  </head>
+  <body>
+
+    % if ( stash 'id' ) {
+      %= stash 'id';
+    % }
+
+    % if ( stash 'error' ) {
+      %= stash 'error';
+    % }
+
+  </body>
+  </html>
+
+% }
+

@@ -1,0 +1,14 @@
+% layout 'default';
+% title 'Welcome';
+
+% if ( stash 'id' ) {
+  %= stash 'id';
+% }
+
+% if ( stash 'url' ) {
+  %= stash 'url';
+% }
+
+% if ( stash 'error' ) {
+  %= stash 'error';
+% }

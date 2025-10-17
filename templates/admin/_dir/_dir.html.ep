@@ -1,0 +1,13 @@
+% layout 'dashboard';
+% title ' Dir ';
+% if ( session->{user}) {
+  <article><h2><%= $name %> </h2>
+    <%== $out %>
+    <footer><h3>Logged in as <%= session 'user' %></h3>
+    </footer>
+  </article>
+% } else {
+  <article><h2>Session Expired</h2>
+    <a href="<%= url_for '/' %>" title="Session expired">Login Again</a>
+  </article>
+% }

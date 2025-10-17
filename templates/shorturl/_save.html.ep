@@ -1,0 +1,19 @@
+% layout 'dashboard';
+% title 'Short URL Admin - Save';
+
+
+<article class="container">
+
+    <h2>Your Redirect file was saved successfully</h2>
+
+    % if ( stash 'short' ) {
+        <%== stash 'short' %>
+    % }
+
+    % if ( stash 'url' ) {
+        <%== stash 'url' %>
+    % }
+
+
+</article>
+

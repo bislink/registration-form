@@ -1,4 +1,41 @@
 % layout 'default';
 % title 'Welcome';
-<h2><%= $msg %></h2>
-Welcome to registrationform
+
+<article class="container">
+  <h2>Create Mojo App</h2>
+
+  <div class="col-sm-6" id="loginForm">
+
+    %= form_for admin => (method => 'post') => begin
+      % if (param 'user') {
+        <div class="alert alert-warning">Wrong Ussername or password or both.  Please try again!</div>
+      % }
+      <div class="form-group">
+        <label for="user">Username</label>
+      %= text_field 'user', id => 'user', name => 'user', class => 'form-control';
+      </div><div class="form-group">
+        <label for="pass">Password</label>
+      %= password_field 'pass', id => 'pass', name => 'pass', class => 'form-control';
+      </div>
+      %= submit_button 'Login'
+    % end
+
+  </div>
+
+  <div class="col-sm-6">
+
+  </div>
+
+
+</article>
+
+% if ( stash 'port' ) {
+  <br>
+  <br>
+  <article class="container">
+    <h3>Ports</h3>
+    <table class="table table-hover table-bordered table-responsive">
+      <tr> <td> Port </td> <td> <%= stash 'port' %> </td> </tr>
+    </table>
+  </article>
+% }

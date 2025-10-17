@@ -1,0 +1,28 @@
+% layout 'default';
+% title 'Dash -';
+
+% if ( session 'user' ) {
+
+    <article class="container-flex"><h2>Welcome back <%= session 'user' %></h2>
+        <div class="nav nav-pills nav-fillr">
+            <a class="nav-link active" href="<%= url_for '/admin/dash' %>" 
+            title="Refresh Dashboard">Dashboard</a>
+            %= include 'admin/_dash/_dash-links';
+            <a class="nav-link" href="<%= url_for '/logout' %>" title="Logout">Logout</a>
+        </div>
+    </article>
+    
+    % if ( stash 'dash' ) { 
+
+        %# stash 'dash' contains multiple <article>...</article> tags
+        <%== stash 'dash' %>
+
+    % }
+    
+% } else {
+
+    <article class="container"><h2>Session Expired</h2>
+        Please login <a href="<%= url_for '/login' %>" title="Session expired, login again">again </a>
+    </article>
+
+% }
