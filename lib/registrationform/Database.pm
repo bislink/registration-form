@@ -59,8 +59,11 @@ sub db_config ($c) {
     my $db_pass = $c->conf->{thisapp}->{database}->{pass};
     chomp $db_pass;
 
+    my $db_port = $c->conf->{thisapp}->{database}->{port};
+    chomp $db_port;
+
     my %i = (
-        dsn => "dbi:mysql:$db_name:$db_url:3308",
+        dsn => "dbi:mysql:$db_name:$db_url:$db_port",
         user => "$db_user",
         pass => "$db_pass"
     );
