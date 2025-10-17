@@ -1,1 +1,1 @@
-git push -u git-biz-land-in-root-brillianginfotech master
+git push -u git-biz-land-in-root-brillianginfotech main
