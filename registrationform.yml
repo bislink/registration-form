@@ -34,6 +34,6 @@ thisapp:
     allowed: ".html|.css|.cgi|.html|.yml|.yaml|.txt|.htm|.asp|.php|.conf|.md|.ep|.t|.js|.gitignore|.ftpconfig|.xml|.pl|.cgi|.md|.php"
 hypnotoad:
   listen:
-    - "http://*:3"
+    - "http://*:10036"
   workers: 10
 redirect_in_seconds: '1'
