@@ -1,0 +1,4 @@
+% layout 'default';
+% title 'Welcome';
+<h2><%= $msg %></h2>
+Welcome to registrationform

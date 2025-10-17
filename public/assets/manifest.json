@@ -1,0 +1,23 @@
+{
+  "background_color": "black",
+  "description": "CreateMojoApp",
+  "display": "standalone",
+	"theme_color": "black",
+  "icons": [
+    {
+      "src": "/assets/images/icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+	{
+      "src": "/assets/images/icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "name": "CreateMojoApp",
+  "short_name": "CreateMojoApp",
+  "start_url": "/index.html?pwa=CreateMojoApp",
+  "scope": "/"
+}
