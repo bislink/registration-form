@@ -44,10 +44,17 @@ sub _form ($c) {
     my $FILE =  "$HOME/$PUB/$FILE_NAME";
     my $FH;
     if ( -f "$FILE") {
-        $out .= "<h3>$FILE_NAME is accessible</h3>";
+        #$out .= "<h3>$FILE_NAME is accessible</h3>";
         if ( open ($FH, "<", "$FILE") ) {
             while (my $LINE = <$FH>) {
-                $out .= qq{$LINE <br>};
+                my $EXPANDED = $LINE; 
+                $EXPANDED =~ s!\_! !g; 
+                $EXPANDED = uc($EXPANDED);
+                $out .= qq{<div class="mb-3">};
+                $out .= qq{<label for="$LINE" class="form-label">$EXPANDED</label>};
+                $out .= qq{<input name="$LINE" id="$LINE" class="form-control form-control-lg" type="text" placeholder="$LINE"};
+                $out .= qq{ aria-label="$EXPANDED">};
+                $out .= qq{</div>};
             }
             close $FH;
         }
