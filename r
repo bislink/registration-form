@@ -12,6 +12,6 @@ git push -u gitlab-com main
 
 echo ""
 
-echo "Update GitHUb: https://github.com/bislink/registration-form.git
+echo "Update GitHUb: https://github.com/bislink/registration-form.git"
 git push -u github main
 

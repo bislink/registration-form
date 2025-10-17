@@ -360,3 +360,9 @@ sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Ro
 	Version ID: Old 0.3.5 | New 0.3.6
 
 
+#### 2025-10-17 15:52:01 CDT
+
+	Commit ID: Old 036 | New 037
+	Version ID: Old 0.3.6 | New 0.3.7
+
+
