@@ -93,9 +93,7 @@
 		$('[data-bs-toggle="tooltip"]').tooltip()
 	});
 
-	const popover = new bootstrap.Popover('.popover-dismiss', {
-  	trigger: 'focus'
-	})
+	//const popover = new bootstrap.Popover('.popover-dismiss', { trigger: 'focus' })
 
 </script>
 
