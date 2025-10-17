@@ -36,12 +36,12 @@ fi
 VISITS_FILE="./$APP_NAME.visits";
 
 # create above two files if they do not exist
-if [ -f "./$VISITS_FILE" ]
+if [ -f "$VISITS_FILE" ]
 then
     TOTAL=`cat $VISITS_FILE`;
 else
     echo "Visits File does not exist. Creating one";
-    touch "./$VISITS_FILE";
+    touch "$VISITS_FILE";
 fi
 
 echo ""

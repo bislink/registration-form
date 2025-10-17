@@ -11,7 +11,7 @@ use warnings;
     my %url = (
         db => '',
         wifi => '192.168.1.237',
-        ether => '192.168.1.237',
+        ether => '192.168.1.145',
     );
 
     # ping each url into an array 

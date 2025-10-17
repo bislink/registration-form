@@ -38,19 +38,31 @@ sub db_config ($c) {
 
     MySQL 8.0.40 ()
 
+    The file, get_database_url.pl, in /m/mojoapp is the stable provider 
+        for all apps on this device only. 
+
 =cut
 
     my $dir = '';
-    $dir = "/home/$user/m/mojoapp/";
+    $dir = $c->conf->{thisapp}->{dir}->{main};
         chomp $dir;
     #
-    my $db_url = `$dir/get_database_url.pl`;
+    my $db_url = $c->conf->{thisapp}->{database}->{url};
     chomp $db_url;
 
+    my $db_name = $c->conf->{thisapp}->{database}->{name};
+    chomp $db_name;
+
+    my $db_user = $c->conf->{thisapp}->{database}->{user};
+    chomp $db_user;
+    
+    my $db_pass = $c->conf->{thisapp}->{database}->{pass};
+    chomp $db_pass;
+
     my %i = (
-        dsn => "dbi:mysql:example2home:$db_url:3308",
-        user => 'example2home',
-        pass => '8RJ7RLIalEucfIk'
+        dsn => "dbi:mysql:$db_name:$db_url:3308",
+        user => "$db_user",
+        pass => "$db_pass"
     );
 
     return %i;

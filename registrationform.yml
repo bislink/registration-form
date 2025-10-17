@@ -38,3 +38,8 @@ hypnotoad:
     - "http://*:10036"
   workers: 10
 redirect_in_seconds: '1'
+database:
+  url: '192.168.1.145'
+  name: 'example2home'
+  user: 'e2h'
+  pass: '8RJ7RLIalEucfIk'
