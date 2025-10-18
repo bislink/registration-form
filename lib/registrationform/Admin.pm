@@ -245,13 +245,14 @@ sub _file ($c, %o) {
         <textarea name="filecont" id="filecont" class="form-item" rows="16" cols="95%">
         };
         #
-        open( my $f, "$file") or $o{error} = "$@";
+        open( my $f, "<", "$file") or $o{error} = "$@";
         while ( my $line = <$f> ) {
           $line =~ s!\#!\#!g;
           $line =~ s!\<!&lt;!g;
           $line =~ s!\>!&gt;!g;
           $o{out} .= qq{$line};
         }
+        close $f;
         #
         $o{out} .= qq{</textarea> <br/> <input type="submit" value="Save">};
       } else {

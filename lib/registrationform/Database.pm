@@ -2,7 +2,7 @@ package registrationform::Database;
 
 # ABSTRACT: Database, Create Mojo App
 
-=head1 Database
+=head2 Database
 
     for registrationform
 
