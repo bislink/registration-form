@@ -1,4 +1,4 @@
-package registrationform::Admin;
+package Createform::Admin;
 
 # ABSTRACT: Admin, Create Mojo App
 

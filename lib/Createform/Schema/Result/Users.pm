@@ -1,4 +1,4 @@
-package registrationform::Schema::Result::Users;
+package Createform::Schema::Result::Users;
 use base qw( DBIx::Class::Core );
 use strict;
 use warnings;

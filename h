@@ -1,1 +1,1 @@
-hypnotoad ./script/registrationform
+hypnotoad ./script/createform

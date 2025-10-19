@@ -1,20 +1,20 @@
-package registrationform::Users;
+package Createform::Users;
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 use Mojo::Util qw(secure_compare);
 
-use registrationform::Database;
-use registrationform::Schema; 
+use Createform::Database;
+use Createform::Schema; 
 
 sub new { bless {}, shift }
 
 sub check ($c, $user, $pass) {
 
     # Connect to database
-    my %db = registrationform::Database->db_config();
-    my %dbi_params = registrationform::Database->dbi_params();
+    my %db = Createform::Database->db_config();
+    my %dbi_params = Createform::Database->dbi_params();
     # retrieve data
     my $row = '';
-    my $schema = registrationform::Schema->connect($db{dsn}, $db{user}, $db{pass}, \%dbi_params);
+    my $schema = Createform::Schema->connect($db{dsn}, $db{user}, $db{pass}, \%dbi_params);
     #
     my %r;
     if ( $user ne '' ) {

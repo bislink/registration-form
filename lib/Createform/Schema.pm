@@ -1,4 +1,4 @@
-package registrationform::Schema;
+package Createform::Schema;
 use base qw/DBIx::Class::Schema/;
 use strict;
 use warnings;

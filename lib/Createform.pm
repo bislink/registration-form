@@ -1,14 +1,14 @@
-package registrationform;
+package Createform;
 
 # ABSTRACT: Create Mojo App
 
 use Mojo::Base 'Mojolicious', -signatures;
 
 use DBIx::Class;
-use registrationform::Database;
-use registrationform::Users;
-use registrationform::Schema;
-use registrationform::Languages;
+use Createform::Database;
+use Createform::Users;
+use Createform::Schema;
+use Createform::Languages;
 
 # This method will run once at server start
 sub startup ($self) {
@@ -29,10 +29,10 @@ sub startup ($self) {
 
   $r->get('/s/*_id')->to('Shorturl#welcome');
 
-  $self->helper (db => sub { state $db = registrationform::Database->new } );
+  $self->helper (db => sub { state $db = Createform::Database->new } );
 
   # users
-  $self->helper ( users => sub { state $users = registrationform::Users->new() } );
+  $self->helper ( users => sub { state $users = Createform::Users->new() } );
 
   # config
   $self->helper ( conf => sub { state $conf = $self->plugin('NotYAMLConfig') } );

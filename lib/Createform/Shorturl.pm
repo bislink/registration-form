@@ -1,4 +1,4 @@
-package registrationform::Shorturl;
+package Createform::Shorturl;
 
 # ABSTRACT: Short URL, Create Mojo App
 
