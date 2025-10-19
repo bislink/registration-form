@@ -1,5 +1,5 @@
 APP_NAME=Createform
-YAML_NAME=Createform.yml
+YAML_NAME=createform.yml
 PWD=/home/ns21u2204/k/kishore/business/registrationform
 USER_HOME_DIR=/home/ns21u2204
 HOST=
