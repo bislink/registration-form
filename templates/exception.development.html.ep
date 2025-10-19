@@ -1,7 +1,9 @@
-% layout 'default';
+% layout 'dashboard';
+% title 'Error, Development';
 
-<article class="dev"><h2>Error</h2>
-	<%= $exception->message %>
+<article class="dev">
+	<h2>Error</h2>
+	<%== $exception->message %>
 </article>
 
 <article><h3>Back to</h3>

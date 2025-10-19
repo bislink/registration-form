@@ -1,7 +1,9 @@
-% layout 'default';
+% layout 'dashboard';
+% title 'Error, Production';
 
-<article class="dev"><h2>Error</h2>
-	<%= $exception->message %>
+<article class="dev">
+	<h2>Error</h2>
+	<%== $exception->message %>
 </article>
 
 <article><h3>Back to</h3>
@@ -10,6 +12,7 @@
 		<a href="<%= url_for '/admin' %>" title="Admin Panel">Admin Panel</a>
 	% } else { 
 		<a href="<%= url_for '/' %>" title="home">Home</a>
+		<a href="<%= url_for '/_form' %>" title="Registration Form Creator">Form</a>
 	% }
 
 </article>

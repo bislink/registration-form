@@ -1,6 +1,8 @@
-% layout 'default';
+% layout 'dashboard';
+% title 'Error';
 
-<article class="dev"><h2>Error</h2>
+<article class="dev">
+	<h2>Error</h2>
 	<%= $exception->message %>
 </article>
 

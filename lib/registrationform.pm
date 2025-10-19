@@ -4,7 +4,6 @@ package registrationform;
 
 use Mojo::Base 'Mojolicious', -signatures;
 
-
 use DBIx::Class;
 use registrationform::Database;
 use registrationform::Users;
