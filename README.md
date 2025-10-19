@@ -9,13 +9,16 @@ Requires Perl and Mojolicious installed on your Linux or WSL System
 ### Name
 A Registration Form Creator
 
-### URLs
+### Repository URLs
 
 #### Our own Git Lab Instance 
 ```https://git.biz-land.in/root/registration-form```
 
 #### Official GitLab.com 
 ```https://gitlab.com/bizimpsol/registration-form.git```
+
+#### Git Hub
+```https://github.com/bislink/registration-form.git```
 
 ### Start Date
 Fri Oct 17 09:18:57 CDT 2025
@@ -490,5 +493,11 @@ sudo cpanm CPAN Cpanel::JSON::XS CryptX EV IO::Socket::Socks Net::DNS::Native Ro
 
 	Commit ID: Old 018 | New 019
 	Version ID: Old 0.1.8 | New 0.1.9
+
+
+#### 2025-10-18 20:55:08 CDT
+
+	Commit ID: Old 019 | New 020
+	Version ID: Old 0.1.9 | New 0.2.0
 
 
