@@ -39,6 +39,7 @@ thisapp:
     name: 'example2home'
     user: 'e2h'
     pass: '8RJ7RLIalEucfIk'
+    later: 'provide an inaccessible filr for pass above and write logic to get pass from that file instead of writing the pass as is in this file'
 hypnotoad:
   listen:
     - "http://*:10036"
