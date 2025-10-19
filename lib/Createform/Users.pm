@@ -2,8 +2,8 @@ package Createform::Users;
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 use Mojo::Util qw(secure_compare);
 
-use Createform::Database;
 use Createform::Schema; 
+use Createform::Database;
 
 sub new { bless {}, shift }
 
@@ -16,6 +16,7 @@ sub check ($c, $user, $pass) {
     my $row = '';
     my $schema = Createform::Schema->connect($db{dsn}, $db{user}, $db{pass}, \%dbi_params);
     #
+
     my %r;
     if ( $user ne '' ) {
         $row = $schema->resultset('Users')->search( username => "$user" );
