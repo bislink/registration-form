@@ -12,12 +12,14 @@
         </div>
     </article>
     
+    <article class="container">
     % if ( stash 'dash' ) { 
 
         %# stash 'dash' contains multiple <article>...</article> tags
         <%== stash 'dash' %>
 
     % }
+    </article>
     
 % } else {
 
