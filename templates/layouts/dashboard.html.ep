@@ -28,7 +28,7 @@
 % if ( session 'user' ) {
 	%= include 'admin/_dash/_nav-loggedin';
 % } else {
-	%= include 'nav-notloggedin';
+	%= include '_nav';
 % }
 
 <br>
