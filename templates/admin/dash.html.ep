@@ -1,5 +1,5 @@
 % layout 'dashboard';
-% title 'Dash -';
+% title 'Dash';
 
 % if ( session 'user' ) {
 
@@ -7,10 +7,14 @@
         <div class="nav nav-pills nav-fillr">
             <a class="nav-link active" href="<%= url_for '/admin/dash' %>" 
             title="Refresh Dashboard">Dashboard</a>
+
             %= include 'admin/_dash/_dash-links';
+
             <a class="nav-link" href="<%= url_for '/logout' %>" title="Logout">Logout</a>
         </div>
     </article>
+
+    <br>
     
     <article class="container">
     % if ( stash 'dash' ) { 

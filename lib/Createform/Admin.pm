@@ -33,7 +33,7 @@ sub dash ($self, %o) {
         $o{dash} = ""; 
 
         # a few videos from this hour 
-        $o{dash} .= qq{<article class="a-few-videos"> <h3>Welcome</h3> };
+        $o{dash} .= qq{<article class="container a-few-videos"> <h3>Welcome</h3> };
         
         $o{dash} .= qq{</article> };
 

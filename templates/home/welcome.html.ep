@@ -2,7 +2,7 @@
 % title 'Welcome';
 
 <article class="container">
-  <h2>Create Mojo App</h2>
+  <h2><%= app->config->{thisapp}->{name} %></h2>
 
   <div class="col-sm-6" id="loginForm">
 
