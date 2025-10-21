@@ -5,6 +5,8 @@ use Mojo::Util qw(secure_compare);
 use Createform::Schema; 
 use Createform::Database;
 
+use Digest::MD5 qw(md5 md5_hex md5_base64);
+
 sub new { bless {}, shift }
 
 sub check ($c, $user, $pass) {
@@ -27,8 +29,12 @@ sub check ($c, $user, $pass) {
         }
     }
 
+    chomp $r{pass};
+    $r{md5_of_pass} = md5_hex($pass);
+
     # Success
-    return 1 if $pass && secure_compare $pass, $r{pass};
+    #return 1 if $pass && secure_compare $pass, $r{pass};
+    return 1 if ($user eq $r{username}) and ($r{md5_of_pass} eq $r{pass});
     # Fail
     return undef;
 

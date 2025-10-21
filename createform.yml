@@ -23,7 +23,7 @@ secrets:
 dev: 1
 version: '045'
 thisapp:
-  name: "Reg Form"
+  name: "Biz Form"
   description: "Registration Form Creator/Manager"
   dir:
     main: "<%= app->home %>"
