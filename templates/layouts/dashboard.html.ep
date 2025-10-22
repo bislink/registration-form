@@ -50,26 +50,26 @@
 <br>
 <br>
 
-<footer class="mt-auto py-4 bg-light fixed-bottom">
+<footer class="mt-auto py-1 bg-light fixed-bottom" style="height: 80px; vertical-align: top">
 	<div class="row">
-		<div class="col-sm">
+		<div class="left">
 			&nbsp;
 			<a tabindex="0" class="btn btn-sm btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus"
-			data-bs-title="<%= app->config->{thisapp}->{name} %>" data-bs-content="Version:<%= app->config->{version} %>">
+			data-bs-title="<%= app->config->{thisapp}->{name} %>" data-bs-content="Version: <%= app->config->{version} %> ">
 				<%= app->config->{thisapp}->{name} %>
 			</a>
 
 			<span id="copy-rights"></span>
 
 			% if ( session->{user} ) {
-			  <%= session->{user} %>
+			  <a href="#" title="Logged in as <%= session->{user} %>"><%= session->{user} %></a> 
 			% } else {
 				<a href="<%= url_for '/' %>" title="<%= $lang{login_again} %>">Login</a>
 			% }
 			%= include 'stats';
 		</div>
 
-		<div class="col-sm">
+		<div class="right">
 			%= include 'ads';
 		</div>
 
@@ -107,6 +107,12 @@
     });
     });
     }
+
+	const myCarousel = document.getElementById('carouselExampleRide')
+		myCarousel.addEventListener('slide.bs.carousel', event => {
+  		// do something...
+	})
+
   </script>
 
 </body>
