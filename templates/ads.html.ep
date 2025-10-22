@@ -1,4 +1,4 @@
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="<%= url_for '/assets/images/ads/01.png' %>" class="ads-images" alt="...">
