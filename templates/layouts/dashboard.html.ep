@@ -50,7 +50,7 @@
 <br>
 <br>
 
-<footer class="mt-auto py-1 bg-light fixed-bottom" style="height: 80px; vertical-align: top">
+<footer class="bg-light fixed-bottom" style="height: 70px; vertical-align: top">
 	<div class="row">
 		<div class="left">
 			&nbsp;
@@ -66,7 +66,9 @@
 			% } else {
 				<a href="<%= url_for '/' %>" title="<%= $lang{login_again} %>">Login</a>
 			% }
+
 			%= include 'stats';
+
 		</div>
 
 		<div class="right">
