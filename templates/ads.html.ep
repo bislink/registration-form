@@ -12,6 +12,9 @@
     <div class="carousel-item">
       <img src="<%= url_for '/assets/images/ads/04.png' %>" class="ads-images" alt="04">
     </div>
+    <div class="carousel-item">
+      <img src="<%= url_for '/assets/images/ads/05.png' %>" class="ads-images" alt="05">
+    </div>
   </div>
   
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
